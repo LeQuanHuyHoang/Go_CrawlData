@@ -1,18 +1,21 @@
 package main
 
 import (
-	_ "encoding/csv"
 	"encoding/json"
 	"fmt"
 	"go_crawler/pkg/utils"
 	"io/ioutil"
 	"log"
 	"os"
+	"strings"
+
+	"github.com/lithammer/shortuuid/v3"
 
 	"github.com/gocolly/colly"
 )
 
 type ProductDetail struct {
+	ID           string `json:"id"`
 	URL          string `json:"url"`
 	Name         string `json:"name"`
 	Stock        string `json:"stock"`
@@ -22,18 +25,21 @@ type ProductDetail struct {
 }
 
 type CategoryLv1 struct {
-	Lv1CategoryURL  string `json:"lv1_category_url"`
-	Lv1CategoryName string `json:"Lv1_category_name"`
+	Lv1CategoryID   string `bson.D:"lv1_category_id" json:"lv1_category_id"`
+	Lv1CategoryURL  string `bson.D:"lv1_category_url" json:"lv1_category_url"`
+	Lv1CategoryName string `bson.D:"lv1_category_url" json:"Lv1_category_name"`
 }
 
 type CategoryLv2 struct {
 	Lv2CategoryURL  string `json:"lv2_category_url"`
 	Lv2CategoryName string `json:"lv2_category_name"`
+	Lv1CategoryName string `json:"lv1_category_name"`
 }
 
 type CategoryLv3 struct {
 	Lv3CategoryURL  string `json:"lv3_category_url"`
 	Lv3CategoryName string `json:"lv3_category_name"`
+	Lv2CategoryName string `json:"lv2_category_name"`
 }
 
 func NewCategoryLv1() *CategoryLv1 {
@@ -44,7 +50,7 @@ func NewCategoryLv2() *CategoryLv2 {
 	return &CategoryLv2{}
 }
 
-func NewCategory() *CategoryLv3 {
+func NewCategoryLv3() *CategoryLv3 {
 	return &CategoryLv3{}
 }
 
@@ -52,63 +58,115 @@ func NewProductDetail() *ProductDetail {
 	return &ProductDetail{}
 }
 
-/*
-type Products struct {
-	List []ProductDetail `json:"product_detail"`
-}
-*/
-/* func NewProducts() *Products {
-	return &Products{}
-} */
-
 func main() {
-	/* 	fName := "data.csv"
-	   	file, err := os.Create(fName)
-	   	if err != nil {
-	   		log.Fatalf("Could not create file, err :%kq", err)
-	   		return
-	   	}
-	   	defer file.Close()
-
-	   	writer := csv.Writer()
-	   	defer writer.Flush() */
-	/* 	product := NewProducts()
-	   	err := product.CrawlData()
+	/* 	category_lv1 := NewCategoryLv1()
+	   	lcate_lv1, err := category_lv1.GetCategoryLv1("https://hoang-phuc.com/")
 	   	utils.CheckError(err)
-	   	productJson, err := json.Marshal(product)
-	   	checkError(err)
-	   	err = ioutil.WriteFile("data.json", productJson, 0644)
-	   	checkError(err)
-	   	log.Printf("Crawling Complete\n") */
-	category := NewCategory()
+
+	   	category_lv2 := NewCategoryLv2()
+	   	lcate_lv2, err := category_lv2.GetCategoryLv2("https://hoang-phuc.com/", lcate_lv1)
+	   	utils.CheckError(err)
+
+	   	category_lv3 := NewCategoryLv3()
+	   	err = category_lv3.GetCategoryLv3("https://hoang-phuc.com/", lcate_lv2)
+	   	utils.CheckError(err) */
+
 	product_detail := NewProductDetail()
-	err := category.GetCategoryLv3("https://hoang-phuc.com/")
-	utils.CheckError(err)
 	var list_category []CategoryLv3
-	list_category, err = category.ReadCategoryJson()
+	list_category, err := ReadCategoryJson()
 	utils.CheckError(err)
 	err = product_detail.GetProductDetail(list_category)
 	utils.CheckError(err)
-	log.Println()
 	log.Printf("Crawling Complete\n")
 }
 
-func (cate *CategoryLv3) GetCategoryLv3(url string) error {
-	list_category := make([]CategoryLv3, 0)
-	category := &CategoryLv3{}
+func (cate *CategoryLv1) GetCategoryLv1(url string) ([]CategoryLv1, error) {
+	list_category := make([]CategoryLv1, 0)
+	category := &CategoryLv1{}
 	c := colly.NewCollector(
 		colly.AllowedDomains("hoang-phuc.com"),
 	)
-	c.OnHTML("div.submenu-container.grid > ul > li", func(e *colly.HTMLElement) {
-		category.Lv3CategoryURL = e.ChildAttr("a", "href")
-		category.Lv3CategoryName = e.ChildText("span > span")
+	c.OnHTML("div.magemenu-menu.horizontal-menu > ul > li", func(e *colly.HTMLElement) {
+		category.Lv1CategoryURL = e.ChildAttr("a", "href")
+		category.Lv1CategoryName = e.ChildText("li.menu > a > span > span")
+		category.Lv1CategoryID = shortuuid.New()
+		if category.Lv1CategoryName != "Bảo hành" {
+			list_category = append(list_category, *category)
+		}
+	})
+	c.Visit(url)
+
+	categoryJson, err := json.Marshal(list_category)
+	utils.CheckError(err)
+	err = ioutil.WriteFile("category_lv1.json", categoryJson, 0644)
+	utils.CheckError(err)
+	log.Println(c)
+
+	/* 	categoryBson, err := bson.Marshal(bson.M{"data": list_category})
+	   	fmt.Println(categoryBson)
+	   	utils.CheckError(err)
+	   	test := []interface{}{categoryBson}
+	   	fmt.Println(test...)
+	   	client, err := database.GetMongoClient()
+	   	utils.CheckError(err)
+	   	//Create a handle to the respective collection in the database.
+	   	collection := client.Database(database.DB).Collection("CategoryLv1")
+	   	//Perform InsertOne operation & validate against the error.
+	   	_, err = collection.InsertMany(context.TODO(), test)
+	   	utils.CheckError(err) */
+
+	return list_category, nil
+}
+
+func (cate *CategoryLv2) GetCategoryLv2(url string, lv1 []CategoryLv1) ([]CategoryLv2, error) {
+	list_category := make([]CategoryLv2, 0)
+	category := &CategoryLv2{}
+	c := colly.NewCollector(
+		colly.AllowedDomains("hoang-phuc.com"),
+	)
+	c.OnHTML("div.grid-child > ul > li", func(e *colly.HTMLElement) {
+		category.Lv2CategoryURL = e.ChildAttr(" a", "href")
+		category.Lv2CategoryName = e.ChildText("div.grid-child > ul > li> a > span>span")
+		for _, v := range lv1 {
+			link := strings.TrimSuffix(v.Lv1CategoryURL, ".html")
+			if strings.Contains(category.Lv2CategoryURL, link) {
+				category.Lv1CategoryName = v.Lv1CategoryName
+			}
+		}
 		list_category = append(list_category, *category)
 	})
 	c.Visit(url)
 
 	categoryJson, err := json.Marshal(list_category)
 	utils.CheckError(err)
-	err = ioutil.WriteFile("category.json", categoryJson, 0644)
+	err = ioutil.WriteFile("category_lv2.json", categoryJson, 0644)
+	utils.CheckError(err)
+	log.Println(c)
+	return list_category, nil
+}
+
+func (cate *CategoryLv3) GetCategoryLv3(url string, lv2 []CategoryLv2) error {
+	list_category := make([]CategoryLv3, 0)
+	category := &CategoryLv3{}
+	c := colly.NewCollector(
+		colly.AllowedDomains("hoang-phuc.com"),
+	)
+	c.OnHTML("div.submenu-container > ul > li", func(e *colly.HTMLElement) {
+		category.Lv3CategoryURL = e.ChildAttr("a", "href")
+		category.Lv3CategoryName = e.ChildText("span > span")
+		for _, v := range lv2 {
+			link := strings.TrimSuffix(v.Lv2CategoryURL, ".html")
+			if strings.Contains(category.Lv3CategoryURL, link) {
+				category.Lv2CategoryName = v.Lv2CategoryName
+			}
+		}
+		list_category = append(list_category, *category)
+	})
+	c.Visit(url)
+
+	categoryJson, err := json.Marshal(list_category)
+	utils.CheckError(err)
+	err = ioutil.WriteFile("category_lv3.json", categoryJson, 0644)
 	utils.CheckError(err)
 	log.Println(c)
 	return nil
@@ -133,6 +191,7 @@ func (p *ProductDetail) GetProductDetail(cate []CategoryLv3) error {
 			})
 		})
 		productInfo.OnHTML("div.product-info-main", func(e *colly.HTMLElement) {
+			product_detail.ID = e.ChildAttr("div.price-box.price-final_price", "data-product-id")
 			product_detail.Name = e.ChildText("h1.page-title")
 			product_detail.Stock = e.ChildAttr("div.stock.available", "title")
 			product_detail.PriceCurrent = e.ChildText("span.normal-price > span.price-container.price-final_price.tax.weee > span.price-wrapper > span.price")
@@ -160,9 +219,9 @@ func (p *ProductDetail) GetProductDetail(cate []CategoryLv3) error {
 	return nil
 }
 
-func (cate *CategoryLv3) ReadCategoryJson() ([]CategoryLv3, error) {
+func ReadCategoryJson() ([]CategoryLv3, error) {
 	// Open our jsonFile
-	jsonFile, err := os.Open("category.json")
+	jsonFile, err := os.Open("category_lv3.json")
 	// if we os.Open returns an error then handle it
 	utils.CheckError(err)
 	// defer the closing of our jsonFile so that we can parse it later on
