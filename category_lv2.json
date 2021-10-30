@@ -1,1 +1,242 @@
-[{"lv2_category_url":"https://hoang-phuc.com/nam/giay-nam.html","lv2_category_name":"Giày","lv1_category_name":"Nam"},{"lv2_category_url":"https://hoang-phuc.com/nam/dep-nam.html","lv2_category_name":"Dép","lv1_category_name":"Nam"},{"lv2_category_url":"https://hoang-phuc.com/nam/ao-nam.html","lv2_category_name":"Áo","lv1_category_name":"Nam"},{"lv2_category_url":"https://hoang-phuc.com/nam/ao-khoac-nam.html","lv2_category_name":"Áo khoác","lv1_category_name":"Nam"},{"lv2_category_url":"https://hoang-phuc.com/nam/quan-nam.html","lv2_category_name":"Quần","lv1_category_name":"Nam"},{"lv2_category_url":"https://hoang-phuc.com/nam/quan-shorts.html","lv2_category_name":"Quần Shorts","lv1_category_name":"Nam"},{"lv2_category_url":"https://hoang-phuc.com/nu/giay-nu.html","lv2_category_name":"GIÀY","lv1_category_name":"Nữ"},{"lv2_category_url":"https://hoang-phuc.com/nu/dep-nu.html","lv2_category_name":"DÉP","lv1_category_name":"Nữ"},{"lv2_category_url":"https://hoang-phuc.com/nu/ao-nu.html","lv2_category_name":"ÁO","lv1_category_name":"Nữ"},{"lv2_category_url":"https://hoang-phuc.com/nu/ao-khoac-nu.html","lv2_category_name":"ÁO KHOÁC","lv1_category_name":"Nữ"},{"lv2_category_url":"https://hoang-phuc.com/nu/quan-nu.html","lv2_category_name":"QUẦN","lv1_category_name":"Nữ"},{"lv2_category_url":"https://hoang-phuc.com/nu/vay-dam.html","lv2_category_name":"VÁY - ĐẦM","lv1_category_name":"Nữ"},{"lv2_category_url":"https://hoang-phuc.com/unisex-product/giay-unisex.html","lv2_category_name":"Giày","lv1_category_name":"Unisex"},{"lv2_category_url":"https://hoang-phuc.com/unisex-product/dep-unisex.html","lv2_category_name":"Dép","lv1_category_name":"Unisex"},{"lv2_category_url":"https://hoang-phuc.com/unisex-product/ao-unisex.html","lv2_category_name":"Áo","lv1_category_name":"Unisex"},{"lv2_category_url":"https://hoang-phuc.com/tre-em-be-trai.html","lv2_category_name":"Bé trai","lv1_category_name":"Unisex"},{"lv2_category_url":"https://hoang-phuc.com/tre-em-be-gai.html","lv2_category_name":"Bé gái","lv1_category_name":"Unisex"},{"lv2_category_url":"https://hoang-phuc.com/nam/phu-kien-thoi-trang-nam.html","lv2_category_name":"Phụ kiện thời trang Nam","lv1_category_name":"Nam"},{"lv2_category_url":"https://hoang-phuc.com/nu/phu-kien-thoi-trang-nu.html","lv2_category_name":"Phụ kiện thời trang Nữ","lv1_category_name":"Nữ"},{"lv2_category_url":"https://hoang-phuc.com/unisex-product/phu-kien-thoi-trang.html","lv2_category_name":"Phụ kiện thời trang Unisex","lv1_category_name":"Unisex"},{"lv2_category_url":"https://hoang-phuc.com/san-pham-phu-kien-giay.html","lv2_category_name":"Phụ kiện giày","lv1_category_name":"Unisex"},{"lv2_category_url":"https://hoang-phuc.com/sale/superga-outlet.html","lv2_category_name":"Superga sale up to 70%","lv1_category_name":"OUTLET"},{"lv2_category_url":"https://hoang-phuc.com/sale/replay-outlet.html","lv2_category_name":"Replay sale up to 70% ++","lv1_category_name":"OUTLET"},{"lv2_category_url":"https://hoang-phuc.com/sale/dr-martens-outlet.html","lv2_category_name":"Dr. Martens Outlet","lv1_category_name":"OUTLET"},{"lv2_category_url":"https://hoang-phuc.com/sale/giay-sale.html","lv2_category_name":"Giày đồng giá từ 490K","lv1_category_name":"OUTLET"},{"lv2_category_url":"https://hoang-phuc.com/sale/ao-thun-ao-polo-sale.html","lv2_category_name":"Áo thun từ 290K","lv1_category_name":"OUTLET"},{"lv2_category_url":"https://hoang-phuc.com/sale/quan-dai-sale.html","lv2_category_name":"Quần dài sale up to 70%","lv1_category_name":"OUTLET"},{"lv2_category_url":"https://hoang-phuc.com/sale/tat-ca-quan-short.html","lv2_category_name":"Quần shorts sale từ 290K","lv1_category_name":"OUTLET"},{"lv2_category_url":"https://hoang-phuc.com/sale/ao-khoac-sale.html","lv2_category_name":"Áo khoác sale up to 70%","lv1_category_name":"OUTLET"},{"lv2_category_url":"https://hoang-phuc.com/sale/phu-kien-sale.html","lv2_category_name":"Phụ kiện sale up to 70%","lv1_category_name":"OUTLET"}]
+[
+   {
+      "ID": "oLziCSXrLaUqPw32sUTqeV",
+      "Name": "Giày",
+      "URL": "https://hoang-phuc.com/nam/giay-nam.html",
+      "HasChildren": true,
+      "ParentId": "item_745",
+      "ParentName": "Nam"
+   },
+   {
+      "ID": "K8dr8gmDmyaqX9sDTa8z73",
+      "Name": "Dép",
+      "URL": "https://hoang-phuc.com/nam/dep-nam.html",
+      "HasChildren": true,
+      "ParentId": "item_745",
+      "ParentName": "Nam"
+   },
+   {
+      "ID": "DjhoDfjice4WL6QwkxTGj5",
+      "Name": "Áo",
+      "URL": "https://hoang-phuc.com/nam/ao-nam.html",
+      "HasChildren": true,
+      "ParentId": "item_745",
+      "ParentName": "Nam"
+   },
+   {
+      "ID": "RPL2ytcxtCNbYMBBZ4UfTD",
+      "Name": "Áo khoác",
+      "URL": "https://hoang-phuc.com/nam/ao-khoac-nam.html",
+      "HasChildren": true,
+      "ParentId": "item_745",
+      "ParentName": "Nam"
+   },
+   {
+      "ID": "se8RjfmzEMgsCz6j8nvuAJ",
+      "Name": "Quần",
+      "URL": "https://hoang-phuc.com/nam/quan-nam.html",
+      "HasChildren": true,
+      "ParentId": "item_745",
+      "ParentName": "Nam"
+   },
+   {
+      "ID": "MiAnTmrxevhKzv9NcpmrvX",
+      "Name": "Quần Shorts",
+      "URL": "https://hoang-phuc.com/nam/quan-shorts.html",
+      "HasChildren": false,
+      "ParentId": "item_745",
+      "ParentName": "Nam"
+   },
+   {
+      "ID": "wyddDhwskvtbMijZsdwbbd",
+      "Name": "GIÀY",
+      "URL": "https://hoang-phuc.com/nu/giay-nu.html",
+      "HasChildren": true,
+      "ParentId": "item_788",
+      "ParentName": "Nữ"
+   },
+   {
+      "ID": "Hcpwy8go97xrbTr5VrKvaX",
+      "Name": "DÉP",
+      "URL": "https://hoang-phuc.com/nu/dep-nu.html",
+      "HasChildren": true,
+      "ParentId": "item_788",
+      "ParentName": "Nữ"
+   },
+   {
+      "ID": "5U4jshtqBxRZeL8o2VXJS",
+      "Name": "ÁO",
+      "URL": "https://hoang-phuc.com/nu/ao-nu.html",
+      "HasChildren": true,
+      "ParentId": "item_788",
+      "ParentName": "Nữ"
+   },
+   {
+      "ID": "rgJCo4bJ7Z33niHB7LbXq7",
+      "Name": "ÁO KHOÁC",
+      "URL": "https://hoang-phuc.com/nu/ao-khoac-nu.html",
+      "HasChildren": true,
+      "ParentId": "item_788",
+      "ParentName": "Nữ"
+   },
+   {
+      "ID": "8jyPkzAjVn8EmHgnmM2kDQ",
+      "Name": "QUẦN",
+      "URL": "https://hoang-phuc.com/nu/quan-nu.html",
+      "HasChildren": true,
+      "ParentId": "item_788",
+      "ParentName": "Nữ"
+   },
+   {
+      "ID": "zA8fDJSHCXYkKUCKxZUMmV",
+      "Name": "VÁY - ĐẦM",
+      "URL": "https://hoang-phuc.com/nu/vay-dam.html",
+      "HasChildren": true,
+      "ParentId": "item_788",
+      "ParentName": "Nữ"
+   },
+   {
+      "ID": "ZvegwKD3e5PWECu6LfkS4h",
+      "Name": "Giày",
+      "URL": "https://hoang-phuc.com/unisex-product/giay-unisex.html",
+      "HasChildren": true,
+      "ParentId": "item_868",
+      "ParentName": "Unisex"
+   },
+   {
+      "ID": "LZrVWKJJJXM4qvYQkcXi7B",
+      "Name": "Dép",
+      "URL": "https://hoang-phuc.com/unisex-product/dep-unisex.html",
+      "HasChildren": true,
+      "ParentId": "item_868",
+      "ParentName": "Unisex"
+   },
+   {
+      "ID": "m5TaxwY2nzdK53uYEppkzM",
+      "Name": "Áo",
+      "URL": "https://hoang-phuc.com/unisex-product/ao-unisex.html",
+      "HasChildren": true,
+      "ParentId": "item_868",
+      "ParentName": "Unisex"
+   },
+   {
+      "ID": "B7cFnc3K5LgHFRT93f6sQF",
+      "Name": "Bé trai",
+      "URL": "https://hoang-phuc.com/tre-em-be-trai.html",
+      "HasChildren": true,
+      "ParentId": "",
+      "ParentName": ""
+   },
+   {
+      "ID": "bM3uKFFt4YvGUKJo7rMVH",
+      "Name": "Bé gái",
+      "URL": "https://hoang-phuc.com/tre-em-be-gai.html",
+      "HasChildren": true,
+      "ParentId": "",
+      "ParentName": ""
+   },
+   {
+      "ID": "nmMzuG5Nw4HhN9Wkkcc4vN",
+      "Name": "Phụ kiện thời trang Nam",
+      "URL": "https://hoang-phuc.com/nam/phu-kien-thoi-trang-nam.html",
+      "HasChildren": true,
+      "ParentId": "item_745",
+      "ParentName": "Nam"
+   },
+   {
+      "ID": "479fyQBUmSFaKGaUHqhSnc",
+      "Name": "Phụ kiện thời trang Nữ",
+      "URL": "https://hoang-phuc.com/nu/phu-kien-thoi-trang-nu.html",
+      "HasChildren": true,
+      "ParentId": "item_788",
+      "ParentName": "Nữ"
+   },
+   {
+      "ID": "eUEnrqfGibD69fEYoWqddV",
+      "Name": "Phụ kiện thời trang Unisex",
+      "URL": "https://hoang-phuc.com/unisex-product/phu-kien-thoi-trang.html",
+      "HasChildren": true,
+      "ParentId": "item_868",
+      "ParentName": "Unisex"
+   },
+   {
+      "ID": "oeLZqnvTAzyYoP4wxWvWEg",
+      "Name": "Phụ kiện giày",
+      "URL": "https://hoang-phuc.com/san-pham-phu-kien-giay.html",
+      "HasChildren": true,
+      "ParentId": "",
+      "ParentName": ""
+   },
+   {
+      "ID": "aMdgJDrM7xnUKxsXYmZ7Di",
+      "Name": "Superga sale up to 70%",
+      "URL": "https://hoang-phuc.com/sale/superga-outlet.html",
+      "HasChildren": false,
+      "ParentId": "item_1443",
+      "ParentName": "OUTLET"
+   },
+   {
+      "ID": "ZA6oxfDecvG5J35CSphZDG",
+      "Name": "Replay sale up to 70% ++",
+      "URL": "https://hoang-phuc.com/sale/replay-outlet.html",
+      "HasChildren": false,
+      "ParentId": "item_1443",
+      "ParentName": "OUTLET"
+   },
+   {
+      "ID": "WrmT8dQkaH6oXLGGcGuY66",
+      "Name": "Dr. Martens Outlet",
+      "URL": "https://hoang-phuc.com/sale/dr-martens-outlet.html",
+      "HasChildren": false,
+      "ParentId": "item_1443",
+      "ParentName": "OUTLET"
+   },
+   {
+      "ID": "pUBQKjdvt9W6kUmXPHeYhZ",
+      "Name": "Giày đồng giá từ 490K",
+      "URL": "https://hoang-phuc.com/sale/giay-sale.html",
+      "HasChildren": false,
+      "ParentId": "item_1443",
+      "ParentName": "OUTLET"
+   },
+   {
+      "ID": "42TmSmiig4f8YkhTNANb8G",
+      "Name": "Áo thun từ 290K",
+      "URL": "https://hoang-phuc.com/sale/ao-thun-ao-polo-sale.html",
+      "HasChildren": false,
+      "ParentId": "item_1443",
+      "ParentName": "OUTLET"
+   },
+   {
+      "ID": "fiM9EEkAATVSHS6HsogqNC",
+      "Name": "Quần dài sale up to 70%",
+      "URL": "https://hoang-phuc.com/sale/quan-dai-sale.html",
+      "HasChildren": false,
+      "ParentId": "item_1443",
+      "ParentName": "OUTLET"
+   },
+   {
+      "ID": "YLSh5AnZmmTztGgG93oZES",
+      "Name": "Quần shorts sale từ 290K",
+      "URL": "https://hoang-phuc.com/sale/tat-ca-quan-short.html",
+      "HasChildren": false,
+      "ParentId": "item_1443",
+      "ParentName": "OUTLET"
+   },
+   {
+      "ID": "XX7AaUW3dFfDQpPqBrbQfT",
+      "Name": "Áo khoác sale up to 70%",
+      "URL": "https://hoang-phuc.com/sale/ao-khoac-sale.html",
+      "HasChildren": false,
+      "ParentId": "item_1443",
+      "ParentName": "OUTLET"
+   },
+   {
+      "ID": "kWGMDsgmaHm3r8NkSpRvoK",
+      "Name": "Phụ kiện sale up to 70%",
+      "URL": "https://hoang-phuc.com/sale/phu-kien-sale.html",
+      "HasChildren": false,
+      "ParentId": "item_1443",
+      "ParentName": "OUTLET"
+   }
+]

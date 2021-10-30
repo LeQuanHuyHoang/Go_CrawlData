@@ -14,14 +14,36 @@ import (
 	"github.com/gocolly/colly"
 )
 
+type Variant struct {
+	URL string
+	IMG string
+}
+
 type ProductDetail struct {
 	ID           string `json:"id"`
 	URL          string `json:"url"`
 	Name         string `json:"name"`
+	ProductType  string
 	Stock        string `json:"stock"`
 	PriceCurrent string `json:"price_current"`
 	Price        string `json:"price"`
 	SKU          string `json:"sku"`
+	IMG          string
+	MODEL        string
+	VENDOR       string
+	SEASON       string
+	CATEGORY     string
+	DESCRIPTION  string
+	VARIANT      []Variant
+}
+
+type Category struct {
+	ID          string
+	Name        string
+	URL         string
+	HasChildren bool
+	ParentId    string
+	ParentName  string
 }
 
 type CategoryLv1 struct {
@@ -42,6 +64,10 @@ type CategoryLv3 struct {
 	Lv2CategoryName string `json:"lv2_category_name"`
 }
 
+func NewCategory() *Category {
+	return &Category{}
+}
+
 func NewCategoryLv1() *CategoryLv1 {
 	return &CategoryLv1{}
 }
@@ -59,6 +85,10 @@ func NewProductDetail() *ProductDetail {
 }
 
 func main() {
+	category := NewCategory()
+	_, err := category.GetCategory("https://hoang-phuc.com/")
+	utils.CheckError(err)
+
 	/* 	category_lv1 := NewCategoryLv1()
 	   	lcate_lv1, err := category_lv1.GetCategoryLv1("https://hoang-phuc.com/")
 	   	utils.CheckError(err)
@@ -71,13 +101,87 @@ func main() {
 	   	err = category_lv3.GetCategoryLv3("https://hoang-phuc.com/", lcate_lv2)
 	   	utils.CheckError(err) */
 
-	product_detail := NewProductDetail()
-	var list_category []CategoryLv3
-	list_category, err := ReadCategoryJson()
-	utils.CheckError(err)
-	err = product_detail.GetProductDetail(list_category)
-	utils.CheckError(err)
+	/* 	product_detail := NewProductDetail()
+	   	var list_category []CategoryLv3
+	   	list_category, err := ReadCategoryJson()
+	   	utils.CheckError(err)
+	   	err = product_detail.GetProductDetail(list_category)
+	   	utils.CheckError(err) */
 	log.Printf("Crawling Complete\n")
+}
+
+func (cate *Category) GetCategory(url string) ([]Category, error) {
+	list_category_lv1 := make([]Category, 0)
+	list_category_lv2 := make([]Category, 0)
+	list_category_lv3 := make([]Category, 0)
+
+	c := colly.NewCollector(
+		colly.AllowedDomains("hoang-phuc.com"),
+	)
+	c.OnHTML("div.magemenu-menu.horizontal-menu > ul > li", func(e *colly.HTMLElement) {
+		category := Category{}
+		category.URL = e.ChildAttr("a", "href")
+		fmt.Println(category.URL)
+		category.ID = e.ChildAttr("a", "class")
+		category.Name = e.ChildText("li.menu > a > span > span")
+		category.HasChildren = false
+		category.ParentId = ""
+		category.ParentName = ""
+		if category.Name != "Bảo hành" {
+			list_category_lv1 = append(list_category_lv1, category)
+		}
+	})
+
+	c.OnHTML("div.grid-child > ul > li", func(e *colly.HTMLElement) {
+		category := Category{}
+		category.ID = shortuuid.New()
+		category.URL = e.ChildAttr("a", "href")
+		category.Name = e.ChildText("div.grid-child > ul > li> a > span>span")
+		for i, v := range list_category_lv1 {
+			link := strings.TrimSuffix(v.URL, ".html")
+			if strings.Contains(category.URL, link) {
+				category.ParentId = v.ID
+				category.ParentName = v.Name
+				list_category_lv1[i].HasChildren = true
+			}
+		}
+		list_category_lv2 = append(list_category_lv2, category)
+	})
+	category := Category{}
+	c.OnHTML("div.submenu-container > ul > li", func(e *colly.HTMLElement) {
+		category.ID = shortuuid.New()
+		category.URL = e.ChildAttr("a", "href")
+		category.Name = e.ChildText("span > span")
+		for i, v := range list_category_lv2 {
+			link := strings.TrimSuffix(v.URL, ".html")
+			if strings.Contains(category.URL, link) {
+				category.ParentId = v.ID
+				category.ParentName = v.Name
+				list_category_lv2[i].HasChildren = true
+			}
+		}
+		list_category_lv3 = append(list_category_lv3, category)
+	})
+
+	c.Visit(url)
+
+	categoryJson1, err := json.MarshalIndent(list_category_lv1, "", "   ")
+	utils.CheckError(err)
+	err = ioutil.WriteFile("category_lv1.json", categoryJson1, 0644)
+	utils.CheckError(err)
+
+	categoryJson2, err := json.MarshalIndent(list_category_lv2, "", "   ")
+	utils.CheckError(err)
+	err = ioutil.WriteFile("category_lv2.json", categoryJson2, 0644)
+	utils.CheckError(err)
+
+	categoryJson3, err := json.MarshalIndent(list_category_lv3, "", "   ")
+	utils.CheckError(err)
+	err = ioutil.WriteFile("category_lv3.json", categoryJson3, 0644)
+	utils.CheckError(err)
+
+	fmt.Println(url)
+	return nil, nil
 }
 
 func (cate *CategoryLv1) GetCategoryLv1(url string) ([]CategoryLv1, error) {
@@ -175,6 +279,8 @@ func (cate *CategoryLv3) GetCategoryLv3(url string, lv2 []CategoryLv2) error {
 func (p *ProductDetail) GetProductDetail(cate []CategoryLv3) error {
 	listproducts := make([]ProductDetail, 0)
 	product_detail := &ProductDetail{}
+	related_product := Variant{}
+
 	for _, v := range cate {
 		url := v.Lv3CategoryURL
 		fmt.Println(url)
@@ -190,6 +296,18 @@ func (p *ProductDetail) GetProductDetail(cate []CategoryLv3) error {
 				productInfo.Visit(e.Request.AbsoluteURL(product_detail.URL))
 			})
 		})
+		productInfo.OnHTML("div.gallery-placeholder > img", func(e *colly.HTMLElement) {
+			product_detail.IMG = e.Attr("data-original")
+		})
+
+		productInfo.OnHTML("div.product.info.detailed", func(e *colly.HTMLElement) {
+			product_detail.MODEL = e.ChildText("td.col.data[data-th='Model']")
+			product_detail.CATEGORY = e.ChildText("td.col.data[data-th='Giới tính']")
+			product_detail.SEASON = e.ChildText("td.col.data[data-th='Season']")
+			product_detail.VENDOR = e.ChildText("td.col.data[data-th='Thương hiệu']")
+			product_detail.DESCRIPTION = e.ChildText("div.value.description-item > p")
+		})
+
 		productInfo.OnHTML("div.product-info-main", func(e *colly.HTMLElement) {
 			product_detail.ID = e.ChildAttr("div.price-box.price-final_price", "data-product-id")
 			product_detail.Name = e.ChildText("h1.page-title")
@@ -198,7 +316,14 @@ func (p *ProductDetail) GetProductDetail(cate []CategoryLv3) error {
 			product_detail.Price = e.ChildText("span.old-price.sly-old-price > span.price-container.price-final_price.tax.weee > span.price-wrapper > span.price")
 			product_detail.SKU = e.ChildText("div.product.attribute.sku > div.value")
 
+			e.ForEach("ul.related-product-list > li", func(_ int, h *colly.HTMLElement) {
+				related_product.URL = h.ChildAttr("a", "href")
+				related_product.IMG = h.ChildAttr("img", "data-original")
+				product_detail.VARIANT = append(product_detail.VARIANT, related_product)
+			})
+
 			listproducts = append(listproducts, *product_detail)
+			product_detail.VARIANT = nil
 		})
 
 		c.OnHTML("li.item.pages-item-next > a.action.next", func(e *colly.HTMLElement) {
@@ -210,7 +335,7 @@ func (p *ProductDetail) GetProductDetail(cate []CategoryLv3) error {
 			fmt.Println("Visiting: ", r.URL.String())
 		})
 		c.Visit(url)
-		productJson, err := json.Marshal(listproducts)
+		productJson, err := json.MarshalIndent(listproducts, "", "   ")
 		utils.CheckError(err)
 		err = ioutil.WriteFile("data.json", productJson, 0644)
 		utils.CheckError(err)

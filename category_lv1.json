@@ -1,1 +1,58 @@
-[{"lv1_category_id":"Qv3L3XxU69goaiQZ3vfohn","lv1_category_url":"https://hoang-phuc.com/nam.html","Lv1_category_name":"Nam"},{"lv1_category_id":"UQ7VummSDieZSJpBfFj84n","lv1_category_url":"https://hoang-phuc.com/nu.html","Lv1_category_name":"Nữ"},{"lv1_category_id":"UKAwMt75huMmXayWewkgSH","lv1_category_url":"https://hoang-phuc.com/unisex-product.html","Lv1_category_name":"Unisex"},{"lv1_category_id":"H8LejVdG3EvVpBHcKJLfZD","lv1_category_url":"https://hoang-phuc.com/kappa-kids.html","Lv1_category_name":"Trẻ em"},{"lv1_category_id":"F7RDQqDGMYYd3wmsX2UdGV","lv1_category_url":"https://hoang-phuc.com/products/tat-ca-phu-kien.html","Lv1_category_name":"Phụ kiện"},{"lv1_category_id":"XMrhJmeaT3ix7vYk3C2kUU","lv1_category_url":"https://hoang-phuc.com/mega-discount.html","Lv1_category_name":"SALE"},{"lv1_category_id":"9xwpa76Cd9yRdqvjKd3vH7","lv1_category_url":"https://hoang-phuc.com/sale.html","Lv1_category_name":"OUTLET"}]
+[
+   {
+      "ID": "item_745",
+      "Name": "Nam",
+      "URL": "https://hoang-phuc.com/nam.html",
+      "HasChildren": true,
+      "ParentId": "",
+      "ParentName": ""
+   },
+   {
+      "ID": "item_788",
+      "Name": "Nữ",
+      "URL": "https://hoang-phuc.com/nu.html",
+      "HasChildren": true,
+      "ParentId": "",
+      "ParentName": ""
+   },
+   {
+      "ID": "item_868",
+      "Name": "Unisex",
+      "URL": "https://hoang-phuc.com/unisex-product.html",
+      "HasChildren": true,
+      "ParentId": "",
+      "ParentName": ""
+   },
+   {
+      "ID": "item_846",
+      "Name": "Trẻ em",
+      "URL": "https://hoang-phuc.com/kappa-kids.html",
+      "HasChildren": false,
+      "ParentId": "",
+      "ParentName": ""
+   },
+   {
+      "ID": "item_1408",
+      "Name": "Phụ kiện",
+      "URL": "https://hoang-phuc.com/products/tat-ca-phu-kien.html",
+      "HasChildren": false,
+      "ParentId": "",
+      "ParentName": ""
+   },
+   {
+      "ID": "item_1458",
+      "Name": "SALE",
+      "URL": "https://hoang-phuc.com/mega-discount.html",
+      "HasChildren": false,
+      "ParentId": "",
+      "ParentName": ""
+   },
+   {
+      "ID": "item_1443",
+      "Name": "OUTLET",
+      "URL": "https://hoang-phuc.com/sale.html",
+      "HasChildren": true,
+      "ParentId": "",
+      "ParentName": ""
+   }
+]

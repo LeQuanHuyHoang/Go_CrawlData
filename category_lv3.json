@@ -1,5 +1,762 @@
-[{
-    "lv3_category_url": "https://hoang-phuc.com/nam/giay-nam/giay-the-thao.html",
-    "lv3_category_name": "Giày thể thao",
-    "lv2_category_name": "Giày"
-}]
+[
+   {
+      "ID": "cqyUV7K748oS6JFBufzgJJ",
+      "Name": "Giày thể thao",
+      "URL": "https://hoang-phuc.com/nam/giay-nam/giay-the-thao.html",
+      "HasChildren": false,
+      "ParentId": "oLziCSXrLaUqPw32sUTqeV",
+      "ParentName": "Giày"
+   },
+   {
+      "ID": "eVhbATKnv4NcEJZAdDXdbZ",
+      "Name": "Giày Sneakers",
+      "URL": "https://hoang-phuc.com/nam/giay-nam/giay-sneakers.html",
+      "HasChildren": false,
+      "ParentId": "oLziCSXrLaUqPw32sUTqeV",
+      "ParentName": "Giày"
+   },
+   {
+      "ID": "TUhmY8mFXWzP3BBsNu5qCQ",
+      "Name": "Giày xăng đan",
+      "URL": "https://hoang-phuc.com/nam/giay-nam/giay-xang-dan.html",
+      "HasChildren": false,
+      "ParentId": "oLziCSXrLaUqPw32sUTqeV",
+      "ParentName": "Giày"
+   },
+   {
+      "ID": "5ku3WA5rYpSjsAVa4NQqRM",
+      "Name": "Giày đế cao su",
+      "URL": "https://hoang-phuc.com/nam/giay-nam/giay-de-cao-su.html",
+      "HasChildren": false,
+      "ParentId": "oLziCSXrLaUqPw32sUTqeV",
+      "ParentName": "Giày"
+   },
+   {
+      "ID": "YXtGHFjzeD7Qf8DgCFE8Gk",
+      "Name": "Giày Da",
+      "URL": "https://hoang-phuc.com/nam/giay-nam/giay-khac.html",
+      "HasChildren": false,
+      "ParentId": "oLziCSXrLaUqPw32sUTqeV",
+      "ParentName": "Giày"
+   },
+   {
+      "ID": "qx9dG7w7HAMMEEAbtxVkS7",
+      "Name": "Giày cao cổ",
+      "URL": "https://hoang-phuc.com/nam/giay-nam/giay-cao-co.html",
+      "HasChildren": false,
+      "ParentId": "oLziCSXrLaUqPw32sUTqeV",
+      "ParentName": "Giày"
+   },
+   {
+      "ID": "BqjcGDR2rNCD4FPRDUeo45",
+      "Name": "Made In England",
+      "URL": "https://hoang-phuc.com/nam/giay-nam/dr-martens-made-in-england.html",
+      "HasChildren": false,
+      "ParentId": "oLziCSXrLaUqPw32sUTqeV",
+      "ParentName": "Giày"
+   },
+   {
+      "ID": "BC335tbTME2iYBTrakJuWg",
+      "Name": "Giày lười",
+      "URL": "https://hoang-phuc.com/nam/giay-nam/giay-luoi.html",
+      "HasChildren": false,
+      "ParentId": "oLziCSXrLaUqPw32sUTqeV",
+      "ParentName": "Giày"
+   },
+   {
+      "ID": "7xWj3X2E7mZfVPTJJiwKsg",
+      "Name": "Giày casual",
+      "URL": "https://hoang-phuc.com/nam/giay-nam/giay-casual.html",
+      "HasChildren": false,
+      "ParentId": "oLziCSXrLaUqPw32sUTqeV",
+      "ParentName": "Giày"
+   },
+   {
+      "ID": "ZTmPTPCqNXAWYRrKGDGyoZ",
+      "Name": "Giày Back to School",
+      "URL": "https://hoang-phuc.com/giay-back-to-school.html",
+      "HasChildren": false,
+      "ParentId": "oLziCSXrLaUqPw32sUTqeV",
+      "ParentName": "Giày"
+   },
+   {
+      "ID": "GWoxzXwBXqmURjjEsgdre",
+      "Name": "Dép kẹp",
+      "URL": "https://hoang-phuc.com/nam/dep-nam/dep-kep.html",
+      "HasChildren": false,
+      "ParentId": "K8dr8gmDmyaqX9sDTa8z73",
+      "ParentName": "Dép"
+   },
+   {
+      "ID": "9GAt8ZTSK5C2fp67vWrw4W",
+      "Name": "Dép đi biển",
+      "URL": "https://hoang-phuc.com/nam/dep-nam/dep-di-bien.html",
+      "HasChildren": false,
+      "ParentId": "K8dr8gmDmyaqX9sDTa8z73",
+      "ParentName": "Dép"
+   },
+   {
+      "ID": "NasqHQwQ6YyEKkbtWCQP64",
+      "Name": "Dép quai ngang",
+      "URL": "https://hoang-phuc.com/nam/dep-nam/dep-quai-ngang.html",
+      "HasChildren": false,
+      "ParentId": "K8dr8gmDmyaqX9sDTa8z73",
+      "ParentName": "Dép"
+   },
+   {
+      "ID": "F2qYmgNkwXyGcaotzip56S",
+      "Name": "Áo thun tay ngắn",
+      "URL": "https://hoang-phuc.com/nam/ao-nam/ao-thun-tay-ngan.html",
+      "HasChildren": false,
+      "ParentId": "DjhoDfjice4WL6QwkxTGj5",
+      "ParentName": "Áo"
+   },
+   {
+      "ID": "jAKjhHALdcWFsTCmdm6tgL",
+      "Name": "Áo thun tay dài",
+      "URL": "https://hoang-phuc.com/nam/ao-nam/ao-thun-tay-dai.html",
+      "HasChildren": false,
+      "ParentId": "DjhoDfjice4WL6QwkxTGj5",
+      "ParentName": "Áo"
+   },
+   {
+      "ID": "CaTgtTve2VZ6M65sn4eCfj",
+      "Name": "Áo thun có cổ",
+      "URL": "https://hoang-phuc.com/nam/ao-nam/ao-thun-co-co.html",
+      "HasChildren": false,
+      "ParentId": "DjhoDfjice4WL6QwkxTGj5",
+      "ParentName": "Áo"
+   },
+   {
+      "ID": "ja9AohLn2aF2bEaZGbq93e",
+      "Name": "Áo sơ mi tay ngắn",
+      "URL": "https://hoang-phuc.com/nam/ao-nam/ao-so-mi-tay-ngan.html",
+      "HasChildren": false,
+      "ParentId": "DjhoDfjice4WL6QwkxTGj5",
+      "ParentName": "Áo"
+   },
+   {
+      "ID": "8qZHoJs3DXuWg5rHMwNT8C",
+      "Name": "Áo sơ mi tay dài",
+      "URL": "https://hoang-phuc.com/nam/ao-nam/ao-so-mi-tay-dai.html",
+      "HasChildren": false,
+      "ParentId": "DjhoDfjice4WL6QwkxTGj5",
+      "ParentName": "Áo"
+   },
+   {
+      "ID": "w6fLiXMq8rVXVXmDFh5MLC",
+      "Name": "Áo nỉ",
+      "URL": "https://hoang-phuc.com/nam/ao-nam/ao-ni.html",
+      "HasChildren": false,
+      "ParentId": "DjhoDfjice4WL6QwkxTGj5",
+      "ParentName": "Áo"
+   },
+   {
+      "ID": "vZok4CZFV9uYHxAuexTKRF",
+      "Name": "Áo khoác gió",
+      "URL": "https://hoang-phuc.com/nam/ao-khoac-nam/ao-khoac-gio.html",
+      "HasChildren": false,
+      "ParentId": "RPL2ytcxtCNbYMBBZ4UfTD",
+      "ParentName": "Áo khoác"
+   },
+   {
+      "ID": "m47mKLzPs9cKx69jpmeYQV",
+      "Name": "Áo khoác thun",
+      "URL": "https://hoang-phuc.com/nam/ao-khoac-nam/ao-khoac-thun.html",
+      "HasChildren": false,
+      "ParentId": "RPL2ytcxtCNbYMBBZ4UfTD",
+      "ParentName": "Áo khoác"
+   },
+   {
+      "ID": "iJhgvgpenqmZnkFsvSVrhi",
+      "Name": "Áo khoác phao",
+      "URL": "https://hoang-phuc.com/nam/ao-khoac-nam/ao-khoac-phao.html",
+      "HasChildren": false,
+      "ParentId": "RPL2ytcxtCNbYMBBZ4UfTD",
+      "ParentName": "Áo khoác"
+   },
+   {
+      "ID": "nzxSU8G6UGRon96detFqtJ",
+      "Name": "Áo khoác Jeans",
+      "URL": "https://hoang-phuc.com/nam/ao-khoac-nam/ao-khoac-jeans.html",
+      "HasChildren": false,
+      "ParentId": "RPL2ytcxtCNbYMBBZ4UfTD",
+      "ParentName": "Áo khoác"
+   },
+   {
+      "ID": "vCXzYAEJ6hpa7TRMEH9UWW",
+      "Name": "Các loại áo khoác khác",
+      "URL": "https://hoang-phuc.com/nam/ao-khoac-nam/ao-khoac-khac.html",
+      "HasChildren": false,
+      "ParentId": "RPL2ytcxtCNbYMBBZ4UfTD",
+      "ParentName": "Áo khoác"
+   },
+   {
+      "ID": "MoCWkdVyaCuUa7ZNe4nb5S",
+      "Name": "Quần Jeans",
+      "URL": "https://hoang-phuc.com/nam/quan-nam/quan-jeans.html",
+      "HasChildren": false,
+      "ParentId": "se8RjfmzEMgsCz6j8nvuAJ",
+      "ParentName": "Quần"
+   },
+   {
+      "ID": "r4PDHpzRBa6shUBshkTDU7",
+      "Name": "Quần Khaki",
+      "URL": "https://hoang-phuc.com/nam/quan-nam/quan-khaki.html",
+      "HasChildren": false,
+      "ParentId": "se8RjfmzEMgsCz6j8nvuAJ",
+      "ParentName": "Quần"
+   },
+   {
+      "ID": "HkWhHDjU9NSUxkrA2on3WM",
+      "Name": "Quần thể thao",
+      "URL": "https://hoang-phuc.com/nam/quan-nam/quan-the-thao.html",
+      "HasChildren": false,
+      "ParentId": "se8RjfmzEMgsCz6j8nvuAJ",
+      "ParentName": "Quần"
+   },
+   {
+      "ID": "jstcjD7ZCXxUfcdvmj5Lmj",
+      "Name": "Quần shorts",
+      "URL": "https://hoang-phuc.com/nam/quan-nam/quan-shorts-nam.html",
+      "HasChildren": false,
+      "ParentId": "se8RjfmzEMgsCz6j8nvuAJ",
+      "ParentName": "Quần"
+   },
+   {
+      "ID": "Bdv7NwBiUQF23f9XUg3kAW",
+      "Name": "Bộ thể thao",
+      "URL": "https://hoang-phuc.com/only-online/kappa-soccer-k4t.html",
+      "HasChildren": false,
+      "ParentId": "se8RjfmzEMgsCz6j8nvuAJ",
+      "ParentName": "Quần"
+   },
+   {
+      "ID": "DLmS7xtr2Ef6ABrxfXxrQf",
+      "Name": "Quần shorts thể thao",
+      "URL": "https://hoang-phuc.com/nam/quan-nam/quan-shorts-the-thao.html",
+      "HasChildren": false,
+      "ParentId": "se8RjfmzEMgsCz6j8nvuAJ",
+      "ParentName": "Quần"
+   },
+   {
+      "ID": "g2krLMGBWuVz677MKSCsba",
+      "Name": "Quần shorts Khaki",
+      "URL": "https://hoang-phuc.com/nam/quan-nam/quan-shorts-khaki.html",
+      "HasChildren": false,
+      "ParentId": "se8RjfmzEMgsCz6j8nvuAJ",
+      "ParentName": "Quần"
+   },
+   {
+      "ID": "J7uvG86Sc6Nk2RuZA2BZJ",
+      "Name": "Quần shorts Jeans",
+      "URL": "https://hoang-phuc.com/nam/quan-nam/quan-shorts-jeans.html",
+      "HasChildren": false,
+      "ParentId": "se8RjfmzEMgsCz6j8nvuAJ",
+      "ParentName": "Quần"
+   },
+   {
+      "ID": "DzV8D9JThnxEP7yXtMQ7eW",
+      "Name": "Giày sneakers",
+      "URL": "https://hoang-phuc.com/nu/giay-nu/giay-sneakers.html",
+      "HasChildren": false,
+      "ParentId": "wyddDhwskvtbMijZsdwbbd",
+      "ParentName": "GIÀY"
+   },
+   {
+      "ID": "U8D4Q6UcoWNWAX8yYMLJwD",
+      "Name": "Giày thể thao",
+      "URL": "https://hoang-phuc.com/nu/giay-nu/giay-the-thao-nu.html",
+      "HasChildren": false,
+      "ParentId": "wyddDhwskvtbMijZsdwbbd",
+      "ParentName": "GIÀY"
+   },
+   {
+      "ID": "mGjoWW88mb5RBkDAt73chM",
+      "Name": "Giày xăng đan",
+      "URL": "https://hoang-phuc.com/nu/giay-nu/giay-xang-dan-nu.html",
+      "HasChildren": false,
+      "ParentId": "wyddDhwskvtbMijZsdwbbd",
+      "ParentName": "GIÀY"
+   },
+   {
+      "ID": "ctEcVtie5rMuhYqiJWTArU",
+      "Name": "Giày đế cao su",
+      "URL": "https://hoang-phuc.com/nu/giay-nu/giay-de-cao-su-nu.html",
+      "HasChildren": false,
+      "ParentId": "wyddDhwskvtbMijZsdwbbd",
+      "ParentName": "GIÀY"
+   },
+   {
+      "ID": "8yHb3LP35rWmRuM5i7yKTL",
+      "Name": "Giày cao cổ",
+      "URL": "https://hoang-phuc.com/nu/giay-nu/giay-cao-co-nu.html",
+      "HasChildren": false,
+      "ParentId": "wyddDhwskvtbMijZsdwbbd",
+      "ParentName": "GIÀY"
+   },
+   {
+      "ID": "VG4vpaxxC7pGDsUCwW59tk",
+      "Name": "Giày Da",
+      "URL": "https://hoang-phuc.com/nu/giay-nu/giay-nu-khac.html",
+      "HasChildren": false,
+      "ParentId": "wyddDhwskvtbMijZsdwbbd",
+      "ParentName": "GIÀY"
+   },
+   {
+      "ID": "KHTffjfxsv7Q6cW9zu4mfA",
+      "Name": "Made In England",
+      "URL": "https://hoang-phuc.com/nu/giay-nu/dr-martens-made-in-england.html",
+      "HasChildren": false,
+      "ParentId": "wyddDhwskvtbMijZsdwbbd",
+      "ParentName": "GIÀY"
+   },
+   {
+      "ID": "F2fDGYpJUkJbNW7vTuVJpn",
+      "Name": "Giày búp bê",
+      "URL": "https://hoang-phuc.com/nu/giay-nu/giay-bup-be.html",
+      "HasChildren": false,
+      "ParentId": "wyddDhwskvtbMijZsdwbbd",
+      "ParentName": "GIÀY"
+   },
+   {
+      "ID": "jjHUNnweskrkotUArFs83L",
+      "Name": "Giày lười",
+      "URL": "https://hoang-phuc.com/nu/giay-nu/giay-luoi-nu.html",
+      "HasChildren": false,
+      "ParentId": "wyddDhwskvtbMijZsdwbbd",
+      "ParentName": "GIÀY"
+   },
+   {
+      "ID": "YC8N5B4XWcgrsk6aMqLBN6",
+      "Name": "Giày Back to school",
+      "URL": "https://hoang-phuc.com/giay-back-to-school.html",
+      "HasChildren": false,
+      "ParentId": "wyddDhwskvtbMijZsdwbbd",
+      "ParentName": "GIÀY"
+   },
+   {
+      "ID": "aVjVgnewTW8XGikYCnRLpQ",
+      "Name": "Dép kẹp",
+      "URL": "https://hoang-phuc.com/nu/dep-nu/dep-kep-nu.html",
+      "HasChildren": false,
+      "ParentId": "Hcpwy8go97xrbTr5VrKvaX",
+      "ParentName": "DÉP"
+   },
+   {
+      "ID": "FcrXLbgN2sHhKWoKmi4W2o",
+      "Name": "Dép đi biển",
+      "URL": "https://hoang-phuc.com/nu/dep-nu/dep-di-bien-nu.html",
+      "HasChildren": false,
+      "ParentId": "Hcpwy8go97xrbTr5VrKvaX",
+      "ParentName": "DÉP"
+   },
+   {
+      "ID": "9xV4JcYWxHDskJeCpfHWFS",
+      "Name": "Dép quai ngang",
+      "URL": "https://hoang-phuc.com/nu/dep-nu/dep-quai-ngang-nu.html",
+      "HasChildren": false,
+      "ParentId": "Hcpwy8go97xrbTr5VrKvaX",
+      "ParentName": "DÉP"
+   },
+   {
+      "ID": "mactHY5dmc8JyeQSLnSsbP",
+      "Name": "Áo thun tay ngắn",
+      "URL": "https://hoang-phuc.com/nu/ao-nu/ao-thun-tay-ngan-nu.html",
+      "HasChildren": false,
+      "ParentId": "5U4jshtqBxRZeL8o2VXJS",
+      "ParentName": "ÁO"
+   },
+   {
+      "ID": "vSiCwLTz79usxS6bGtZoqG",
+      "Name": "Áo thun có cổ",
+      "URL": "https://hoang-phuc.com/nu/ao-nu/ao-thun-co-co-nu.html",
+      "HasChildren": false,
+      "ParentId": "5U4jshtqBxRZeL8o2VXJS",
+      "ParentName": "ÁO"
+   },
+   {
+      "ID": "AT99sBqcFCBnoEskDzAt5Q",
+      "Name": "Áo sơ mi tay ngắn",
+      "URL": "https://hoang-phuc.com/nu/ao-nu/ao-so-mi-tay-ngan-nu.html",
+      "HasChildren": false,
+      "ParentId": "5U4jshtqBxRZeL8o2VXJS",
+      "ParentName": "ÁO"
+   },
+   {
+      "ID": "mGv3nx9xU9AQsLKB2cXXXP",
+      "Name": "Áo nỉ",
+      "URL": "https://hoang-phuc.com/nu/ao-nu/ao-ni-nu.html",
+      "HasChildren": false,
+      "ParentId": "5U4jshtqBxRZeL8o2VXJS",
+      "ParentName": "ÁO"
+   },
+   {
+      "ID": "z8njwqHELePzNDbYzTw8EX",
+      "Name": "Áo khoác gió",
+      "URL": "https://hoang-phuc.com/nu/ao-khoac-nu/ao-khoac-gio-nu.html",
+      "HasChildren": false,
+      "ParentId": "rgJCo4bJ7Z33niHB7LbXq7",
+      "ParentName": "ÁO KHOÁC"
+   },
+   {
+      "ID": "xFD2jMkMDVqXTZAq4K9Rhe",
+      "Name": "Áo khoác thun",
+      "URL": "https://hoang-phuc.com/nu/ao-khoac-nu/ao-khoac-thun-nu.html",
+      "HasChildren": false,
+      "ParentId": "rgJCo4bJ7Z33niHB7LbXq7",
+      "ParentName": "ÁO KHOÁC"
+   },
+   {
+      "ID": "dfFxRALe5LMx7FtctvgyhX",
+      "Name": "Áo khoác phao",
+      "URL": "https://hoang-phuc.com/nu/ao-khoac-nu/ao-khoac-phao-nu.html",
+      "HasChildren": false,
+      "ParentId": "rgJCo4bJ7Z33niHB7LbXq7",
+      "ParentName": "ÁO KHOÁC"
+   },
+   {
+      "ID": "HHnmCcGYm3UEak4RbT3zUV",
+      "Name": "Quần Jeans",
+      "URL": "https://hoang-phuc.com/nu/quan-nu/quan-jeans-nu.html",
+      "HasChildren": false,
+      "ParentId": "8jyPkzAjVn8EmHgnmM2kDQ",
+      "ParentName": "QUẦN"
+   },
+   {
+      "ID": "qMZLNi25D27kcEMBpYYte6",
+      "Name": "Quần shorts thể thao",
+      "URL": "https://hoang-phuc.com/nu/quan-nu/quan-shorts-the-thao-nu.html",
+      "HasChildren": false,
+      "ParentId": "8jyPkzAjVn8EmHgnmM2kDQ",
+      "ParentName": "QUẦN"
+   },
+   {
+      "ID": "49TaLCfEUCf5Lt5g8TU2FY",
+      "Name": "Đầm",
+      "URL": "https://hoang-phuc.com/nu/vay-dam/dam-nu.html",
+      "HasChildren": false,
+      "ParentId": "zA8fDJSHCXYkKUCKxZUMmV",
+      "ParentName": "VÁY - ĐẦM"
+   },
+   {
+      "ID": "BAGMhkKmbHWfyiMLXXWCrM",
+      "Name": "Chân váy",
+      "URL": "https://hoang-phuc.com/nu/vay-dam/vay-nu.html",
+      "HasChildren": false,
+      "ParentId": "zA8fDJSHCXYkKUCKxZUMmV",
+      "ParentName": "VÁY - ĐẦM"
+   },
+   {
+      "ID": "KwdjcYinFQgB6BVQEk2WoQ",
+      "Name": "Giày thể thao",
+      "URL": "https://hoang-phuc.com/unisex-product/giay-unisex/giay-the-thao.html",
+      "HasChildren": false,
+      "ParentId": "ZvegwKD3e5PWECu6LfkS4h",
+      "ParentName": "Giày"
+   },
+   {
+      "ID": "wg9Sd4UVFE8ZvPUMq2oujC",
+      "Name": "Giày sneakers",
+      "URL": "https://hoang-phuc.com/unisex-product/giay-unisex/giay-sneakers.html",
+      "HasChildren": false,
+      "ParentId": "ZvegwKD3e5PWECu6LfkS4h",
+      "ParentName": "Giày"
+   },
+   {
+      "ID": "iCY86PusVjv9PhcXDg2jY",
+      "Name": "Giày xăng đan",
+      "URL": "https://hoang-phuc.com/unisex-product/giay-unisex/giay-xang-dan.html",
+      "HasChildren": false,
+      "ParentId": "ZvegwKD3e5PWECu6LfkS4h",
+      "ParentName": "Giày"
+   },
+   {
+      "ID": "xjWbJjokdGMSbLpk4VZe38",
+      "Name": "Giày cao cổ",
+      "URL": "https://hoang-phuc.com/unisex-product/giay-unisex/giay-cao-co.html",
+      "HasChildren": false,
+      "ParentId": "ZvegwKD3e5PWECu6LfkS4h",
+      "ParentName": "Giày"
+   },
+   {
+      "ID": "97VW5X5V6DeEhx394rTQHW",
+      "Name": "Giày đế cao su",
+      "URL": "https://hoang-phuc.com/unisex-product/giay-unisex/giay-de-cao-su.html",
+      "HasChildren": false,
+      "ParentId": "ZvegwKD3e5PWECu6LfkS4h",
+      "ParentName": "Giày"
+   },
+   {
+      "ID": "qQwuSTcsYKQdsMZtfTpGnT",
+      "Name": "Giày Da",
+      "URL": "https://hoang-phuc.com/unisex-product/giay-unisex/giay-khac.html",
+      "HasChildren": false,
+      "ParentId": "ZvegwKD3e5PWECu6LfkS4h",
+      "ParentName": "Giày"
+   },
+   {
+      "ID": "cZzYGwvv6yHJVUeefx54j7",
+      "Name": "Made In England",
+      "URL": "https://hoang-phuc.com/unisex-product/giay-unisex/dr-martens-made-in-england.html",
+      "HasChildren": false,
+      "ParentId": "ZvegwKD3e5PWECu6LfkS4h",
+      "ParentName": "Giày"
+   },
+   {
+      "ID": "gn7QEyABRxMck5ttTCVnbj",
+      "Name": "Giày lười",
+      "URL": "https://hoang-phuc.com/unisex-product/giay-unisex/giay-luoi.html",
+      "HasChildren": false,
+      "ParentId": "ZvegwKD3e5PWECu6LfkS4h",
+      "ParentName": "Giày"
+   },
+   {
+      "ID": "v7sgJS8EdHtrdJvzfJWdmS",
+      "Name": "Giày casual",
+      "URL": "https://hoang-phuc.com/unisex-product/giay-unisex/giay-casual.html",
+      "HasChildren": false,
+      "ParentId": "ZvegwKD3e5PWECu6LfkS4h",
+      "ParentName": "Giày"
+   },
+   {
+      "ID": "32vuBQ7G7XMGKQ877wz9tE",
+      "Name": "Dép kẹp",
+      "URL": "https://hoang-phuc.com/unisex-product/dep-unisex/dep-kep.html",
+      "HasChildren": false,
+      "ParentId": "LZrVWKJJJXM4qvYQkcXi7B",
+      "ParentName": "Dép"
+   },
+   {
+      "ID": "H4LU23uUnMpm5ovxN5T3Ya",
+      "Name": "Dép quai ngang",
+      "URL": "https://hoang-phuc.com/unisex-product/dep-unisex/dep-quai-ngang.html",
+      "HasChildren": false,
+      "ParentId": "LZrVWKJJJXM4qvYQkcXi7B",
+      "ParentName": "Dép"
+   },
+   {
+      "ID": "uKQRM8zGir9hEW6zTBCzDF",
+      "Name": "Áo thun tay ngắn",
+      "URL": "https://hoang-phuc.com/unisex-product/ao-unisex/ao-thun-tay-ngan.html",
+      "HasChildren": false,
+      "ParentId": "m5TaxwY2nzdK53uYEppkzM",
+      "ParentName": "Áo"
+   },
+   {
+      "ID": "YUT54CAPDnDS8YjaqgMbun",
+      "Name": "Áo thun có cổ",
+      "URL": "https://hoang-phuc.com/unisex-product/ao-unisex/ao-thun-co-co.html",
+      "HasChildren": false,
+      "ParentId": "m5TaxwY2nzdK53uYEppkzM",
+      "ParentName": "Áo"
+   },
+   {
+      "ID": "Bqoxe3NkdxJQhyShvDpBhk",
+      "Name": "Giày bé trai",
+      "URL": "https://hoang-phuc.com/tre-em-be-trai-giay-be-trai.html",
+      "HasChildren": false,
+      "ParentId": "B7cFnc3K5LgHFRT93f6sQF",
+      "ParentName": "Bé trai"
+   },
+   {
+      "ID": "Ujm2q8AH4iKgk8EABkqf9X",
+      "Name": "Giày Back to school",
+      "URL": "https://hoang-phuc.com/tre-em/giay-back-to-school-kid.html",
+      "HasChildren": false,
+      "ParentId": "B7cFnc3K5LgHFRT93f6sQF",
+      "ParentName": "Bé trai"
+   },
+   {
+      "ID": "3sbUgDiAjGdP3abYRGcG4F",
+      "Name": "Quần Áo bé trai",
+      "URL": "https://hoang-phuc.com/tre-em/tre-em-be-trai/quan-ao-boy.html",
+      "HasChildren": false,
+      "ParentId": "B7cFnc3K5LgHFRT93f6sQF",
+      "ParentName": "Bé trai"
+   },
+   {
+      "ID": "Cdvb3qXcpoias5ZeoNpyrR",
+      "Name": "Giày bé gái",
+      "URL": "https://hoang-phuc.com/tre-em-be-gai-giay-be-gai.html",
+      "HasChildren": false,
+      "ParentId": "bM3uKFFt4YvGUKJo7rMVH",
+      "ParentName": "Bé gái"
+   },
+   {
+      "ID": "sR4aR6DUAHJWustqo5khFN",
+      "Name": "Giày Back to school",
+      "URL": "https://hoang-phuc.com/tre-em/giay-back-to-school-kid.html",
+      "HasChildren": false,
+      "ParentId": "bM3uKFFt4YvGUKJo7rMVH",
+      "ParentName": "Bé gái"
+   },
+   {
+      "ID": "y4iQvtDk6fibgF2p6zXADZ",
+      "Name": "Quần áo bé gái",
+      "URL": "https://hoang-phuc.com/tre-em/tre-em-be-gai/quan-ao-be-gai.html",
+      "HasChildren": false,
+      "ParentId": "bM3uKFFt4YvGUKJo7rMVH",
+      "ParentName": "Bé gái"
+   },
+   {
+      "ID": "rLKjbDtGwquKsXvkJMcNLb",
+      "Name": "Nón",
+      "URL": "https://hoang-phuc.com/nam/phu-kien-thoi-trang-nam/non.html",
+      "HasChildren": false,
+      "ParentId": "nmMzuG5Nw4HhN9Wkkcc4vN",
+      "ParentName": "Phụ kiện thời trang Nam"
+   },
+   {
+      "ID": "ztjqaB52cRZ54HBJB5MriC",
+      "Name": "Balo - Túi xách",
+      "URL": "https://hoang-phuc.com/nam/phu-kien-thoi-trang-nam/balo-nam.html",
+      "HasChildren": false,
+      "ParentId": "nmMzuG5Nw4HhN9Wkkcc4vN",
+      "ParentName": "Phụ kiện thời trang Nam"
+   },
+   {
+      "ID": "KAWxMpJ3SkwiX8FbMHrUsR",
+      "Name": "Dây nịt",
+      "URL": "https://hoang-phuc.com/nam/phu-kien-thoi-trang-nam/day-nit.html",
+      "HasChildren": false,
+      "ParentId": "nmMzuG5Nw4HhN9Wkkcc4vN",
+      "ParentName": "Phụ kiện thời trang Nam"
+   },
+   {
+      "ID": "a8TwxJgaJR98cuMn8VMBoD",
+      "Name": "Ví",
+      "URL": "https://hoang-phuc.com/nam/phu-kien-thoi-trang-nam/vi-nam.html",
+      "HasChildren": false,
+      "ParentId": "nmMzuG5Nw4HhN9Wkkcc4vN",
+      "ParentName": "Phụ kiện thời trang Nam"
+   },
+   {
+      "ID": "xDL9TzK5tmSRXTe8zTUnT9",
+      "Name": "Vớ",
+      "URL": "https://hoang-phuc.com/nam/vo.html",
+      "HasChildren": false,
+      "ParentId": "nmMzuG5Nw4HhN9Wkkcc4vN",
+      "ParentName": "Phụ kiện thời trang Nam"
+   },
+   {
+      "ID": "vi3z9m3jXW4h5kM6aXTc9J",
+      "Name": "Phụ kiện khác",
+      "URL": "https://hoang-phuc.com/nam/phu-kien-thoi-trang-nam/ph-ki-n-khac.html",
+      "HasChildren": false,
+      "ParentId": "nmMzuG5Nw4HhN9Wkkcc4vN",
+      "ParentName": "Phụ kiện thời trang Nam"
+   },
+   {
+      "ID": "ZSR8wp2DDYYFtF2wKVvRZ8",
+      "Name": "Nón",
+      "URL": "https://hoang-phuc.com/nu/phu-kien-thoi-trang-nu/non-nu.html",
+      "HasChildren": false,
+      "ParentId": "479fyQBUmSFaKGaUHqhSnc",
+      "ParentName": "Phụ kiện thời trang Nữ"
+   },
+   {
+      "ID": "JMYKVaXKavuKcpRJSuvYyH",
+      "Name": "Túi xách",
+      "URL": "https://hoang-phuc.com/nu/phu-kien-thoi-trang-nu/tui-xach-nu.html",
+      "HasChildren": false,
+      "ParentId": "479fyQBUmSFaKGaUHqhSnc",
+      "ParentName": "Phụ kiện thời trang Nữ"
+   },
+   {
+      "ID": "CqgRTCJHER7Y5ETzHRDDHD",
+      "Name": "Balo",
+      "URL": "https://hoang-phuc.com/nu/phu-kien-thoi-trang-nu/balo-nu.html",
+      "HasChildren": false,
+      "ParentId": "479fyQBUmSFaKGaUHqhSnc",
+      "ParentName": "Phụ kiện thời trang Nữ"
+   },
+   {
+      "ID": "2Cbp7fRfYU4iwn2suq8h2E",
+      "Name": "Vớ",
+      "URL": "https://hoang-phuc.com/nu/vo-nu.html",
+      "HasChildren": false,
+      "ParentId": "479fyQBUmSFaKGaUHqhSnc",
+      "ParentName": "Phụ kiện thời trang Nữ"
+   },
+   {
+      "ID": "QzR7JuKmWky22Bo5dQxuJG",
+      "Name": "Nón",
+      "URL": "https://hoang-phuc.com/unisex-product/phu-kien-thoi-trang/non-unisex.html",
+      "HasChildren": false,
+      "ParentId": "eUEnrqfGibD69fEYoWqddV",
+      "ParentName": "Phụ kiện thời trang Unisex"
+   },
+   {
+      "ID": "D7iu7m2aiJgj9BikbH7dNK",
+      "Name": "Túi xách",
+      "URL": "https://hoang-phuc.com/unisex-product/phu-kien-thoi-trang/tui-xach-unisex.html",
+      "HasChildren": false,
+      "ParentId": "eUEnrqfGibD69fEYoWqddV",
+      "ParentName": "Phụ kiện thời trang Unisex"
+   },
+   {
+      "ID": "atC4rwC3qV2UT6AymxxQS8",
+      "Name": "Balo",
+      "URL": "https://hoang-phuc.com/unisex-product/phu-kien-thoi-trang/balo-unisex.html",
+      "HasChildren": false,
+      "ParentId": "eUEnrqfGibD69fEYoWqddV",
+      "ParentName": "Phụ kiện thời trang Unisex"
+   },
+   {
+      "ID": "8ENNw9295wJyLsVDPDFn4B",
+      "Name": "Dây nịt",
+      "URL": "https://hoang-phuc.com/unisex-product/phu-kien-thoi-trang/day-nit-unisex.html",
+      "HasChildren": false,
+      "ParentId": "eUEnrqfGibD69fEYoWqddV",
+      "ParentName": "Phụ kiện thời trang Unisex"
+   },
+   {
+      "ID": "qgCfBU2sKKpVoddeMpWzVZ",
+      "Name": "Vớ",
+      "URL": "https://hoang-phuc.com/unisex-product/vo.html",
+      "HasChildren": false,
+      "ParentId": "eUEnrqfGibD69fEYoWqddV",
+      "ParentName": "Phụ kiện thời trang Unisex"
+   },
+   {
+      "ID": "2WTPDBjhrhppVGCQaMDiQU",
+      "Name": "Phụ kiện khác",
+      "URL": "https://hoang-phuc.com/san-pham-phu-kien-giay/ph-ki-n-khac.html",
+      "HasChildren": false,
+      "ParentId": "oeLZqnvTAzyYoP4wxWvWEg",
+      "ParentName": "Phụ kiện giày"
+   },
+   {
+      "ID": "HkJoMHzRmy66pfUBpv3dca",
+      "Name": "Lót giày",
+      "URL": "https://hoang-phuc.com/san-pham-phu-kien-giay/lot-giay.html",
+      "HasChildren": false,
+      "ParentId": "oeLZqnvTAzyYoP4wxWvWEg",
+      "ParentName": "Phụ kiện giày"
+   },
+   {
+      "ID": "Pk782ubZN9XUZPNxf6wKAV",
+      "Name": "Dây giày",
+      "URL": "https://hoang-phuc.com/san-pham-phu-kien-giay/day-giay.html",
+      "HasChildren": false,
+      "ParentId": "oeLZqnvTAzyYoP4wxWvWEg",
+      "ParentName": "Phụ kiện giày"
+   },
+   {
+      "ID": "SgQcgGRxekZhRye2zy7wFP",
+      "Name": "Xi đánh giày",
+      "URL": "https://hoang-phuc.com/san-pham-phu-kien-giay/xi-danh-giay.html",
+      "HasChildren": false,
+      "ParentId": "oeLZqnvTAzyYoP4wxWvWEg",
+      "ParentName": "Phụ kiện giày"
+   },
+   {
+      "ID": "PqTLPoL5Q5FvQ33NLiAqkG",
+      "Name": "Bàn chải giày",
+      "URL": "https://hoang-phuc.com/san-pham-phu-kien-giay/ban-ch-i-giay.html",
+      "HasChildren": false,
+      "ParentId": "oeLZqnvTAzyYoP4wxWvWEg",
+      "ParentName": "Phụ kiện giày"
+   }
+]
